@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="dist/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Multi-lang</title>
+ <link rel="stylesheet" href="src/dist/styles.css">
 </head>
 <body>
-    <div class="p-4 bg-indigo-600 text-white">PostCSS</div>
+
+  <!-- <h1 class="text-red-500">ssss</h1>
+  <div class="language-selector">
+    <button id="current-lang" aria-expanded="false" class="montserrat-semibold">
+      KZ
+      <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+    </button>
+  <ul id="lang-dropdown" class="dropdown hidden">
+    <li data-lang="ru" data-file="index.html" class="montserrat-semibold">RU</li>
+    <li data-lang="en" data-file="index-en.html" class="montserrat-semibold">EN</li>
+  </ul>
+  </div>
+ <script src="src/js/language.js"></script> -->
+  <video src="assets/videos/video.mp4" class="w-full" autoplay muted controls></video>
+  <!-- <img src="assets/images/main_video_bg.jpg" alt="" class="w-full "> -->
+  <section class="bg-neutral-50 w-full h-auto flex flex-col justify-center items-start   gap-[10px] px-[40px] py-[50px]   sm:gap-[20px] sm:px-[70px] sm:py-[80px] md:gap-[30px] md:px-[90px] md:py-[100px] lg:gap-[40px] lg:px-[100px] lg:py-[110px] xl:gap-[40px] xl:px-[220px] xl:py-[110px]">
+      <div class="flex gap-[10px] sm:gap-[20px] md:gap-[30px] lg:gap-[40px] xl:gap-[40px]">
+        <img src="assets/icons/book.svg" alt="" class="  sm:w-[92px] sm:h-[69px] md:w-[96px] md:h-[78px] lg:w-[110px] lg:h-[95px] xl:w-[170px] xl:h-[140px]">
+        <div>
+          <span class="font-family:montserrat-bold text-neutral-700 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Nurturing Potential,</span></br>
+          <span class="montserrat-bold text-blue-600 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Creating Leaders</span>
+          <!-- Используется от mobile-horyz и выше -->
+          <div class="hidden sm:block sm:mt-[10px] md:block md:mt-[20px] lg:block lg:mt-[20px] xl:mt-[40px]">
+            <p class="font-mont-alt font-medium text-zinc-700   text-base w-[280px] sm:text-lg sm:w-[100%] sm:mb-[10px] md:text-xl md:w-[100%] md:mb-[20px] lg:text-2xl lg:w-[100%] lg:mb-[20px] xl:text-2xl xl:w-[100%] xl:mb-[40px]">Наша миссия — обеспечить качественное образование,
+              которое станет прочной основой для успешной жизни
+              и карьеры каждого ученика. Мы стремимся не только
+              обучать, но и вдохновлять, раскрывая индивидуальные
+              таланты и формируя уверенность в будущем.</p>
+            <a class="text-blue-700 font-mont-alt font-semibold underline   text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">Узнать о школе</a>
+          </div>
+        </div>
+      </div>
+      <!-- Используется только для mobile-vert -->
+      <div class="my-[10px] sm:hidden">
+        <p class="font-mont-alt font-medium text-zinc-700   text-base w-[100%] mb-[10px]">Наша миссия — обеспечить качественное образование,
+          которое станет прочной основой для успешной жизни
+          и карьеры каждого ученика. Мы стремимся не только
+          обучать, но и вдохновлять, раскрывая индивидуальные
+          таланты и формируя уверенность в будущем.</p>
+        <a class="text-blue-700 font-mont-alt font-semibold   underline text-base">Узнать о школе</a>
+      </div>
+  </section>
 </body>
 </html>
