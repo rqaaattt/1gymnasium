@@ -24,14 +24,74 @@
     </div>
  <  script src="src/js/language.js"></script> -->
 
+    <header id="section" class="fixed top-0 left-0 w-full z-50 transition-all duration-[1s] overflow-hidden">
+      <div class="flex items-center justify-between px-[20px] py-[10px]">
+        <img src="assets/icons/logo.svg" alt="" class="">
+        <button id="burger" class="flex flex-col gap-1">
+          <!-- <span class="w-6 h-0.5 bg-white particle"></span>
+          <span class="w-6 h-0.5 bg-white particle"></span>
+          <span class="w-6 h-0.5 bg-white particle"></span> -->
+          <img src="assets/icons/menu.svg" alt="">
+        </button>
+      </div>
 
-    <header class="absolute flex justify-between w-[100%] px-[10px]">
+      <nav id="menu" class="p-[20px] hidden flex flex-col gap-[25px]
+                           transition-all duration-[1s] overflow-hidden">
+        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">О школе & Поступление</a>
+        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">Важные темы</a>
+        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">Контакты</a>
+        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">3D Tour</a>
+        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">Русский язык</a>
+      </nav>
+    </header>
+
+<script>
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("menu");
+  const navbar = document.getElementById("section");
+
+  burger.addEventListener("click", () => {
+    if (menu.classList.contains("hidden")) {
+      menu.classList.remove("hidden");
+      menu.style.maxHeight = menu.scrollHeight + "px";
+      navbar.classList.add("scrolled");
+      navbar.classList.add("dont-close");
+    } else {
+      menu.style.maxHeight = "0";
+      setTimeout(() => menu.classList.add("hidden"), 550);
+      if (window.scrollY < 200) {
+        navbar.classList.remove("scrolled");
+      }
+      navbar.classList.remove("dont-close");
+    }
+  });
+
+  const header = document.querySelector("header");
+  const target = document.querySelector("#section");
+
+  
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      navbar.classList.add("scrolled");
+    } else {
+      if (!navbar.classList.contains("dont-close")) {
+        navbar.classList.remove("scrolled");
+      }
+    }
+  });
+
+</script>
+
+
+
+    <!-- <header class="absolute flex justify-between w-[100%] px-[10px]">
       <img src="assets/icons/logo.svg" alt="" class="">
       <img src="assets/icons/menu.svg" alt="">
-    </header>
+    </header> -->
     <video src="assets/videos/video.mp4" class="w-full" autoplay muted controls></video>
     <!-- <img src="assets/images/main_video_bg.jpg" alt="" class="w-full "> -->
-    <article class="bg-neutral-50 w-full h-auto flex flex-col justify-center items-start   gap-[10px] px-[40px] py-[50px]   sm:gap-[20px] sm:px-[70px] sm:py-[80px] md:gap-[30px] md:px-[90px] md:py-[100px] lg:gap-[40px] lg:px-[100px] lg:py-[110px] xl:gap-[40px] xl:px-[220px] xl:py-[110px]">
+    <article id="section" class="bg-neutral-50 w-full h-auto flex flex-col justify-center items-start   gap-[10px] px-[40px] py-[50px]   sm:gap-[20px] sm:px-[70px] sm:py-[80px] md:gap-[30px] md:px-[90px] md:py-[100px] lg:gap-[40px] lg:px-[100px] lg:py-[110px] xl:gap-[40px] xl:px-[220px] xl:py-[110px]">
       <div class="flex gap-[10px] sm:gap-[20px] md:gap-[30px] lg:gap-[40px] xl:gap-[40px]">
         <img src="assets/icons/book.svg" alt="" class="  sm:w-[92px] sm:h-[69px] md:w-[96px] md:h-[78px] lg:w-[110px] lg:h-[95px] xl:w-[170px] xl:h-[140px]">
         <div>
