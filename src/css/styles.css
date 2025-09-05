@@ -8,7 +8,26 @@
 }
 
 .scrolled{
-    background-color: rgba(37, 99, 235);
-    backdrop-filter: blur(10px); 
+    background-color: transparent;
+    backdrop-filter: blur(20px); 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    color:
 }
+.scrolled .tour{
+  background-color: transparent;
+  
+}
+
+.scrolled a:hover{
+  background-color: #2563eb;
+  color: white;
+}
+.tour:hover{
+  background-color: white;
+  border-radius: 10px;
+  border: 2px white solid;
+  color: #2563eb;
+}
+
+

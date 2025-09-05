@@ -24,9 +24,9 @@
     </div>
  <  script src="src/js/language.js"></script> -->
 
-    <header id="section" class="fixed top-0 left-0 w-full z-50 transition-all duration-[1s] overflow-hidden">
-      <div class="flex items-center justify-between px-[20px] py-[10px]">
-        <img src="assets/icons/logo.svg" alt="" class="">
+    <header id="section1" class=" fixed top-0 left-0 w-full z-50 transition-all duration-[1s] overflow-hidden md:hidden">
+      <div class="flex items-center justify-between px-[20px] py-[10px] md:px-[30px] md:py-[20px]">
+        <img src="assets/icons/logo.svg" alt="" class="sm:size-[80px]">
         <button id="burger" class="flex flex-col gap-1">
           <!-- <span class="w-6 h-0.5 bg-white particle"></span>
           <span class="w-6 h-0.5 bg-white particle"></span>
@@ -35,53 +35,28 @@
         </button>
       </div>
 
-      <nav id="menu" class="p-[20px] hidden flex flex-col gap-[25px]
+      <nav id="menu" class=" p-[20px] hidden flex flex-col gap-[25px]
                            transition-all duration-[1s] overflow-hidden">
-        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">О школе & Поступление</a>
-        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">Важные темы</a>
-        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">Контакты</a>
-        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">3D Tour</a>
-        <a href="#" class="block text-neutral-50 text-base font-mont font-semibold">Русский язык</a>
+        <a href="#" class="block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold">О школе & Поступление</a>
+        <a href="#" class="block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold">Важные темы</a>
+        <a href="#" class="block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold">Контакты</a>
+        <a href="#" class="block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold">3D тур</a>
+        <a href="#" class="block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold">Русский язык</a>
       </nav>
     </header>
-
-<script>
-  const burger = document.getElementById("burger");
-  const menu = document.getElementById("menu");
-  const navbar = document.getElementById("section");
-
-  burger.addEventListener("click", () => {
-    if (menu.classList.contains("hidden")) {
-      menu.classList.remove("hidden");
-      menu.style.maxHeight = menu.scrollHeight + "px";
-      navbar.classList.add("scrolled");
-      navbar.classList.add("dont-close");
-    } else {
-      menu.style.maxHeight = "0";
-      setTimeout(() => menu.classList.add("hidden"), 550);
-      if (window.scrollY < 200) {
-        navbar.classList.remove("scrolled");
-      }
-      navbar.classList.remove("dont-close");
-    }
-  });
-
-  const header = document.querySelector("header");
-  const target = document.querySelector("#section");
-
-  
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      navbar.classList.add("scrolled");
-    } else {
-      if (!navbar.classList.contains("dont-close")) {
-        navbar.classList.remove("scrolled");
-      }
-    }
-  });
-
-</script>
+    <header id="section2" class="hidden md:block fixed top-0 left-0 w-full z-50 transition-all duration-[1s] overflow-hidden">
+      <div class="flex items-center justify-between px-[30px] py-[20px] lg:px-[60px] py-[10px]">
+        <img src="assets/icons/logo.svg" alt="" class="md:size-[100px] lg:size-[125px]">
+        <div class="flex gap-[30px] justify-center items-center text-center text-neutral-50 font-mont font-semibold lg:text-xl xl:text-xl lg:gap-[20px] transition-all duration-[1s]">
+          <a class="hover:text-neutral-200 p-2 hover:cursor-pointer">О школе&</br>Поступление</a>
+          <a class="hover:text-neutral-200 p-2 hover:cursor-pointer">Важные</br>темы</a>
+          <a class="hover:text-neutral-200 p-2 hover:cursor-pointer">Контакты</a>
+          <a class="hover:text-neutral-200 p-2 hover:cursor-pointer px-5 py-2 border-[2px] border-blue-600 rounded-lg tour">3D тур</a>
+          <a class="hover:text-neutral-200 p-2 hover:cursor-pointer">RU</a>
+        </div>
+      </div>
+    </header>
+    <script src="src/js/burger.js"></script>
 
 
 
@@ -89,7 +64,8 @@
       <img src="assets/icons/logo.svg" alt="" class="">
       <img src="assets/icons/menu.svg" alt="">
     </header> -->
-    <video src="assets/videos/video.mp4" class="w-full" autoplay muted controls></video>
+    <img src="assets/images/main_video_bg.jpg" alt="" class="w-[100%] h-auto">
+    <!-- <video src="assets/videos/video.mp4" class="w-full" autoplay muted controls></video> -->
     <!-- <img src="assets/images/main_video_bg.jpg" alt="" class="w-full "> -->
     <article id="section" class="bg-neutral-50 w-full h-auto flex flex-col justify-center items-start   gap-[10px] px-[40px] py-[50px]   sm:gap-[20px] sm:px-[70px] sm:py-[80px] md:gap-[30px] md:px-[90px] md:py-[100px] lg:gap-[40px] lg:px-[100px] lg:py-[110px] xl:gap-[40px] xl:px-[220px] xl:py-[110px]">
       <div class="flex gap-[10px] sm:gap-[20px] md:gap-[30px] lg:gap-[40px] xl:gap-[40px]">
