@@ -8,26 +8,113 @@
 }
 
 .scrolled{
-    background-color: transparent;
-    backdrop-filter: blur(20px); 
+    background-color: #2563eb;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
-    color:
+    color: white;
 }
-.scrolled .tour{
-  background-color: transparent;
-  
-}
-
-.scrolled a:hover{
+header a:hover{
   background-color: #2563eb;
   color: white;
 }
-.tour:hover{
+
+.scrolled .tour{
+  border-color: white;
+}
+.scrolled a:hover{
   background-color: white;
-  border-radius: 10px;
-  border: 2px white solid;
   color: #2563eb;
 }
 
+header .language-selector {
+  position: relative;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 
+header .language-selector #current-lang {
+  padding: 0.625rem 1.25rem;
+  background-color: transparent;
+  border: none;
+  gap: 0.3125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+header .language-selector .current-lang {
+  background-color: transparent;
+  border: none;
+  gap: 0.3125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+header .language-selector #current-lang:hover,
+header .language-selector #current-lang:active {
+  color: #fff;
+  background-color: #2563eb;
+}
+
+header .language-selector #current-lang .arrow {
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+header .language-selector #current-lang.open .arrow {
+  transform: rotate(-90deg);
+}
+
+header .language-selector .current-lang .arrow {
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+header .language-selector .current-lang.open .arrow {
+  transform: rotate(-90deg);
+}
+
+/* Скрытое состояние dropdown */
+header .language-selector .dropdown {
+  margin-top: -0.0625rem;
+  position: absolute;
+  left: 0;
+  width: auto;
+  background-color: #2563eb;
+  list-style: none;
+  z-index: 100;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  border-radius: 0 0 1rem 1rem;
+  overflow: hidden;
+}
+
+/* Показанное состояние dropdown */
+header .language-selector .dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+header .language-selector .dropdown li {
+  padding: 0.625rem 1.25rem;
+  width: 4.375rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+header .language-selector .dropdown li:hover {
+  background-color: #114999;
+}
+
+header .open {
+  background-color: #2563eb !important;
+  color: #fff;
+}
