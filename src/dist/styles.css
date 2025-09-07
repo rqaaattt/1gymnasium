@@ -260,8 +260,17 @@
   .row-span-2 {
     grid-row: span 2 / span 2;
   }
+  .mx-\[20px\] {
+    margin-inline: 20px;
+  }
   .my-\[10px\] {
     margin-block: 10px;
+  }
+  .my-\[40px\] {
+    margin-block: 40px;
+  }
+  .mt-\[0\] {
+    margin-top: 0;
   }
   .mt-\[10px\] {
     margin-top: 10px;
@@ -447,9 +456,6 @@
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
-  .bg-blue-700 {
-    background-color: var(--color-blue-700);
-  }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
@@ -503,9 +509,6 @@
   }
   .py-\[10px\] {
     padding-block: 10px;
-  }
-  .py-\[15px\] {
-    padding-block: 15px;
   }
   .py-\[20px\] {
     padding-block: 20px;
@@ -584,10 +587,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .shadow-lg {
-    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -1429,6 +1428,11 @@
   .lg\:px-\[48px\] {
     @media (width >= 64rem) {
       padding-inline: 48px;
+    }
+  }
+  .lg\:px-\[50px\] {
+    @media (width >= 64rem) {
+      padding-inline: 50px;
     }
   }
   .lg\:px-\[60px\] {
