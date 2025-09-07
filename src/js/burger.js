@@ -7,12 +7,15 @@ const navbar2 = document.getElementById("section2");
     if (menu.classList.contains("hidden")) {
       menu.classList.remove("hidden");
       menu.style.maxHeight = menu.scrollHeight + "px";
+      
       navbar1.classList.add("scrolled");
       navbar1.classList.add("dont-close");
       navbar2.classList.add("scrolled");
       navbar2.classList.add("dont-close");
+      setTimeout(() => menu.classList.remove("overflow-hidden"), 900);
     } else {
       menu.style.maxHeight = "0";
+      menu.classList.add("overflow-hidden")
       setTimeout(() => menu.classList.add("hidden"), 900);
       
       if (window.scrollY < 200) {
