@@ -13,7 +13,8 @@ const navbar2 = document.getElementById("section2");
       navbar2.classList.add("dont-close");
     } else {
       menu.style.maxHeight = "0";
-      setTimeout(() => menu.classList.add("hidden"), 700);
+      setTimeout(() => menu.classList.add("hidden"), 900);
+      
       if (window.scrollY < 200) {
         navbar1.classList.remove("scrolled");
         navbar2.classList.remove("scrolled");
