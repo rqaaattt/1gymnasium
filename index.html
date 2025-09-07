@@ -26,7 +26,20 @@
       <nav id="menu" class="overflow-hidden max-h-0   hidden flex flex-col
                            transition-all duration-[1s]">
         <a href="#" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">О школе & Поступление</a>
-        <a href="#" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">Важные темы</a>
+        
+         <div class="relative topics-selector w-[100vw]">
+          <!-- Кнопка -->
+          <button class="important_topics p-[20px] flex items-center gap-1 text-white font-mont font-semibold text-base sm:text-lg md:text-xl" >
+            Важные темы
+             <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+          </button>
+          <!-- Выпадающее меню -->
+          <div class="dropdown  hidden bg-[#215ad9] z-0 mx-[20px] my-[40px] mt-[-1px] shadow-xl z-0">
+            <a class="text-base sm:text-lg md:text-xl
+              text-base sm:text-lg md:text-xl font-mont font-semibold p-[20px]  transition-all duration-[1s] text-base">Питание в школе</a>
+          </div>
+        </div>
+
         <a href="#" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">Контакты</a>
         <a href="#" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">3D тур</a>
         <div class="relative language-selector w-[100vw]">
@@ -39,17 +52,11 @@
           <!-- Выпадающее меню -->
           <ul class="lang-dropdown  hidden bg-[#215ad9] z-0 mx-[20px] my-[40px] mt-[-1px] shadow-xl z-0">
             <li data-file="index.html" class="   text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base sm:text-lg md:text-xl font-mont font-semibold p-[20px]  transition-all duration-[1s] text-base">Русский язык</li>
+              text-base p-[20px]  transition-all duration-[1s] text-base">Русский язык</li>
             <li data-file="kz/index.html" class="text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base sm:text-lg md:text-xl font-mont font-semibold p-[20px]  transition-all duration-[1s] text-base">Казахский язык</li>
+              text-base  p-[20px]  transition-all duration-[1s] text-base">Казахский язык</li>
             <li data-file="en/index.html" class="text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base sm:text-lg md:text-xl font-mont font-semibold p-[20px]  transition-all duration-[1s] text-base">Английский язык</li>
+              text-base  p-[20px]  transition-all duration-[1s] text-base">Английский язык</li>
           </ul>
         </div>
         <script src="src/js/burger-language.js"></script>
@@ -70,19 +77,19 @@
           <div class="relative inline-block text-left language-selector">
            <!-- Кнопка текущего языка -->
            <button id="current-lang" 
-             class="flex items-center justify-between w-28 px-4  py-2 bg-[#2563EB] font-alt text-neutral-50 font-semibold transition-all duration-[0.5s] hover:bg-blue-600">
+             class="flex items-center justify-between w-28 px-4  py-2 bg-transparent font-alt text-neutral-50 font-semibold transition-all duration-[0.5s] hover:bg-white hover:text-blue-600 active:bg-white active:text-blue-600">
              RU <span class="material-symbols-outlined arrow">arrow_back_ios</span>
            </button>
          
            <!-- Dropdown -->
            <ul id="lang-dropdown" 
-             class="absolute right-0 w-27.5 bg-[#2563EB] shadow-xl hidden z-50 transition-all [1s]">
+             class="absolute right-0 w-[100%] bg-[#2563EB] shadow-xl hidden z-50 transition-all [1s] mt-[-1px]">
              <li data-file="index.html" 
-               class="px-4 py-2 cursor-pointer hover:bg-blue-700 font-alt text-neutal-50">RU</li>
+               class="px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-600 font-alt text-neutal-50">RU</li>
              <li data-file="kz/index.html" 
-               class="px-4 py-2 cursor-pointer hover:bg-blue-700 font-alt text-neutal-50">KZ</li>
+               class="px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-600 font-alt text-neutal-50">KZ</li>
              <li data-file="en/index.html" 
-               class="px-4 py-2 cursor-pointer hover:bg-blue-700 font-alt text-neutal-50">EN</li>
+               class="px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-600 font-alt text-neutal-50">EN</li>
            </ul>
           </div>
 

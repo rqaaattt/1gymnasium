@@ -20,6 +20,7 @@ header a:hover{
 .scrolled .tour{
   border-color: white;
 }
+
 .scrolled a:hover{
   background-color: white;
   color: #2563eb;
@@ -31,34 +32,8 @@ header .language-selector {
   font-size: 1.5rem;
 }
 
-header .language-selector #current-lang {
-  padding: 0.625rem 1.25rem;
-  background-color: transparent;
-  border: none;
-  gap: 0.3125rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  transition: background 0.3s, box-shadow 0.3s;
-}
 
-header .language-selector .current-lang {
-  background-color: transparent;
-  border: none;
-  gap: 0.3125rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  transition:  0.3s ease;
-}
 
-header .language-selector #current-lang:hover,
-header .language-selector #current-lang:active {
-  color: #fff;
-  background-color: #2563eb;
-}
 
 header .language-selector #current-lang .arrow {
   font-size: 1rem;
@@ -110,11 +85,13 @@ header .language-selector .dropdown li {
   transition: background 0.2s ease;
 }
 
-header .language-selector .dropdown li:hover {
-  background-color: #114999;
-}
 
 header .open {
   background-color: #2563eb !important;
   color: #fff;
+}
+
+.scrolled #current-lang:hover{
+  color:#2563eb;
+  background-color: white;
 }

@@ -10,7 +10,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-sky-600: oklch(58.8% 0.158 241.966);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
@@ -49,7 +48,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -334,9 +332,6 @@
   .max-h-0 {
     max-height: calc(var(--spacing) * 0);
   }
-  .w-27\.5 {
-    width: calc(var(--spacing) * 27.5);
-  }
   .w-28 {
     width: calc(var(--spacing) * 28);
   }
@@ -469,6 +464,9 @@
   }
   .bg-neutral-700 {
     background-color: var(--color-neutral-700);
+  }
+  .bg-transparent {
+    background-color: transparent;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -623,17 +621,17 @@
       }
     }
   }
-  .hover\:bg-blue-600 {
+  .hover\:bg-white {
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-blue-600);
+        background-color: var(--color-white);
       }
     }
   }
-  .hover\:bg-blue-700 {
+  .hover\:text-blue-600 {
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-blue-700);
+        color: var(--color-blue-600);
       }
     }
   }
@@ -663,6 +661,16 @@
       @media (hover: hover) {
         color: var(--color-zinc-900);
       }
+    }
+  }
+  .active\:bg-white {
+    &:active {
+      background-color: var(--color-white);
+    }
+  }
+  .active\:text-blue-600 {
+    &:active {
+      color: var(--color-blue-600);
     }
   }
   .sm\:top-\[-45px\] {
@@ -1725,32 +1733,6 @@ header .language-selector {
   font-weight: 600;
   font-size: 1.5rem;
 }
-header .language-selector #current-lang {
-  padding: 0.625rem 1.25rem;
-  background-color: transparent;
-  border: none;
-  gap: 0.3125rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  transition: background 0.3s, box-shadow 0.3s;
-}
-header .language-selector .current-lang {
-  background-color: transparent;
-  border: none;
-  gap: 0.3125rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-header .language-selector #current-lang:hover,
-header .language-selector #current-lang:active {
-  color: #fff;
-  background-color: #2563eb;
-}
 header .language-selector #current-lang .arrow {
   font-size: 1rem;
   font-weight: 600;
@@ -1792,12 +1774,13 @@ header .language-selector .dropdown li {
   color: #fff;
   transition: background 0.2s ease;
 }
-header .language-selector .dropdown li:hover {
-  background-color: #114999;
-}
 header .open {
   background-color: #2563eb !important;
   color: #fff;
+}
+.scrolled #current-lang:hover {
+  color: #2563eb;
+  background-color: white;
 }
 @property --tw-rotate-x {
   syntax: "*";
