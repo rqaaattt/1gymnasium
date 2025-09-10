@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/dist/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <video src="assets/videos/video.mp4" class="w-full" autoplay muted controls></video>
+    <section class="bg-neutral-50 w-full h-auto flex flex-col justify-start items-start gap-[10px] px-[40px] py-[50px]   sm:gap-[20px] sm:px-[70px] sm:py-[80px] md:gap-[30px] md:px-[90px] md:py-[100px] lg:gap-[40px] lg:px-[100px] lg:py-[110px] xl:gap-[40px] xl:px-[220px] xl:py-[110px]">
+        <div class="flex gap-[10px] justify-start items-start sm:gap-[20px] md:gap-[30px] lg:gap-[40px] xl:gap-[40px]">
+          <img src="assets/icons/F.svg" alt="" class="w-[52px] sm:w-[93px] sm:h-[93px] md:w-[100px] md:h-[100px] lg:w-[126px] lg:h-[126px] xl:w-[194px]">
+          <div>
+            <span class="font-mont font-bold text-neutral-700 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Igniting Minds,</span></br>
+            <span class="montserrat-bold text-blue-600 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Transforming Futures</span>
+            <div class="hidden sm:block sm:mt-[10px] md:block md:mt-[20px] lg:block lg:mt-[20px] xl:mt-[40px]">
+              <p class="font-mont-alt font-medium text-zinc-700   text-base w-[280px] sm:text-lg sm:w-[100%] sm:mb-[10px] md:text-xl md:w-[100%] md:mb-[20px] lg:text-2xl lg:w-[100%] lg:mb-[20px] xl:text-2xl xl:w-[100%] xl:mb-[40px]">Наша миссия — обеспечить качественное образование,
+                которое станет прочной основой для успешной жизни
+                и карьеры каждого ученика. Мы стремимся не только
+                обучать, но и вдохновлять, раскрывая индивидуальные
+                таланты и формируя уверенность в будущем.</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-[10px] sm:hidden">
+          <p class="font-mont-alt font-medium text-zinc-700   text-base w-[100%] mb-[10px]">Наша миссия — обеспечить качественное образование,
+            которое станет прочной основой для успешной жизни
+            и карьеры каждого ученика. Мы стремимся не только
+            обучать, но и вдохновлять, раскрывая индивидуальные
+            таланты и формируя уверенность в будущем.</p>
+        </div>
+    </section>
+    <section class="flex px-[17px] py-[25px] sm:px-[26px] sm:py-[64px] md:px-[20px] md:py-[62px]">        
+        <button class=".swiper-button-prev"><img src="assets/icons/Button-left.svg" alt=""></button>
+        <article>
+            <h1 class="font-mont font-bold text-blue-600 text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">IMPORTANT</h1>
+            <div class=".image-slider swiper-container">
+                <div class=".image-slider swiper-wrapper">
+                    <div class=".image-slider swiper-slide">
+                        <img src="assets/images/Base.png" alt="" class="w-[220px] sm:w-[227px] md:w-[264px] xl:w-[360px]">
+                        <h2 class="font-mont-alt font-bold text-zinc-700 text-sm pt-[15px] pl-[13px]">Для будущих учителей</h2>
+                        <h1 class="font-mont font-medium text-neutral-700 pt-[5px] pl-[13px]">Карьера в <br>#1gymnasium</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/Base (1).png" alt="" class="w-[220px] sm:w-[227px] md:w-[264px] xl:w-[360px]">
+                        <h2 class="font-mont-alt font-bold text-zinc-700 text-sm pt-[15px] pl-[13px]">Для будущих учителей</h2>
+                        <h1 class="font-mont font-medium text-neutral-700 pt-[5px] pl-[13px]">Карьера в <br>#1gymnasium</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/Base3.png" alt="" class="w-[220px] sm:w-[227px] md:w-[264px] xl:w-[360px]">
+                        <h2 class="font-mont-alt font-bold text-zinc-700 text-sm pt-[15px] pl-[13px]">Для будущих учителей</h2>
+                        <h1 class="font-mont font-medium text-neutral-700 pt-[5px] pl-[13px]">Карьера в <br>#1gymnasium</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/Base.png" alt="" class="w-[220px] sm:w-[227px] md:w-[264px] xl:w-[360px]">
+                        <h2 class="font-mont-alt font-bold text-zinc-700 text-sm pt-[15px] pl-[13px]">Для будущих учителей</h2>
+                        <h1 class="font-mont font-medium text-neutral-700 pt-[5px] pl-[13px]">Карьера в <br>#1gymnasium</h1>
+                    </div>
+                </div>               
+            </div>
+        </article>
+        <button class=".swiper-button-next"><img src="assets/icons/Button-right.svg" alt=""></button>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/slider.js"></script>
+</body>
+</html>
