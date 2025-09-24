@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample, isn't for using | 1gymnasium</title>
+    <link rel="stylesheet" href="src/dist/styles.css">
+    <link rel="icon" type="image/png" href="logo.svg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios" />
+</head>
+<body>
+    <header id="section1" class=" fixed top-0 left-0 w-full z-50 transition-all duration-[1s]  lg:hidden ">
+      <div class="flex items-center justify-between px-[20px] py-[10px] md:px-[30px] md:py-[20px] duration-[1s] ">
+        <img src="assets/icons/logo.svg" alt="" class="sm:size-[80px]">
+        <button id="burger" class="flex flex-col gap-1">
+          <img src="assets/icons/menu.svg" alt="">
+        </button>
+      </div>
+
+      <nav id="menu" class="overflow-hidden max-h-0   hidden flex flex-col
+                           transition-all duration-[1s]">
+        <a href="#" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">О школе & Поступление</a>
+        
+
+
+        
+         <!-- Dropdown внутри бургера -->
+        <div class="relative w-full">
+          <!-- Кнопка -->
+          <button id="dropdownBtn" 
+            class="flex w-full items-center justify-between p-[20px] text-left text-base sm:text-lg md:text-xl font-medium text-blue-600 text-white bg-white bg-transparent ">
+            Важные темы
+            <svg class="size-5.5 ml-2 transition-transform duration-200 rotate-90" 
+                 id="dropdownArrow" 
+                 xmlns="http://www.w3.org/2000/svg" 
+                 fill="none" viewBox="0 0 24 24" 
+                 stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" 
+                    d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+        
+          <!-- Выпадающий список -->
+          <div id="dropdownMenu" 
+               class="hidden flex flex-col bg-blue-700 text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold">
+            <a href="index.html" class="px-[50px] py-[20px] block  transition-linear">Питание в школе</a>
+            <a href="index.html" class="px-[50px] py-[20px] block transition-linear">Воспитательная работа</a>
+            <a href="index.html" class="px-[50px] py-[20px] block transition-linear">Внеурочная деятельность</a>
+            <a href="index.html" class="px-[50px] py-[20px] block transition-linear">Инклюзивное образование</a>
+            <a href="index.html" class="px-[50px] py-[20px] block transition-linear">Школьное самоуправление</a>
+            <a href="index.html" class="px-[50px] py-[20px] block transition-linear">Родителям</a>
+          </div>
+        </div>
+
+        <script src="src/js/dropdownMenu.js"></script>
+
+
+
+
+
+        <a href="#" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">Контакты</a>
+        <a href="#" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">3D тур</a>
+        <div class="relative language-selector w-[100vw]">
+          <!-- Кнопка -->
+          <button class="p-[20px] current-lang flex items-center justify-between gap-1 text-white font-mont font-semibold text-base sm:text-lg md:text-xl w-[100%]" >
+            Русский язык
+             <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+          </button>
+        
+          <!-- Выпадающее меню -->
+          <ul class="lang-dropdown  hidden  z-0 mt-[-1px] z-0 bg-blue-700 ">
+            <li data-file="index.html" class="   text-base sm:text-lg md:text-xl font-mont font-semibold
+              text-base px-[50px] py-[20px]  transition-all duration-[1s]">Русский язык</li>
+            <li data-file="kz/index.html" class="text-base sm:text-lg md:text-xl font-mont font-semibold
+              text-base  px-[50px] py-[20px]  transition-all duration-[1s]">Казахский язык</li>
+            <li data-file="en/index.html" class="text-base sm:text-lg md:text-xl font-mont font-semibold
+              text-base  px-[50px] py-[20px]  transition-all duration-[1s] ">Английский язык</li>
+          </ul>
+        </div>
+        <script src="src/js/burger-language.js"></script>
+      </nav>
+    </header>
+    <header id="section2" class="hidden lg:block fixed top-0 left-0 w-full z-50 transition-all duration-[1s]">
+      <div class="flex items-center justify-between px-[30px] py-[20px] lg:px-[50px] py-[10px] gap-[20px]">
+        <img src="assets/icons/logo.svg" alt="" class="md:size-[100px] lg:size-[125px]">
+        <div class="flex flex-1 justify-end items-stretch items-center  text-neutral-50 font-mont font-semibold lg:text-xl xl:text-xl ">
+          <a class="flex items-center justify-center px-6 p-2 hover:cursor-pointer transition-all duration-[1s] text-center">О школе&</br>Поступление</a>
+            
+          <div class="relative inline-block text-left dropdown-pattern">
+  <!-- Кнопка текущего языка -->
+  <button id="dropdown-btn"
+    class="flex items-center gap-[10px] justify-between w-[100%] px-4 py-2 font-alt text-neutral-50 font-semibold transition-all duration-[0.5s] hover:bg-white hover:text-blue-600 active:bg-white active:text-blue-600">
+    Важные<br>темы <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+  </button>
+
+  <!-- Dropdown -->
+  <ul id="dropdown-ul" class="hidden absolute left-0 mt-2 w-[250%] bg-blue-600 shadow-lg z-50 flex flex-col ">
+    <a class="px-4 py-2 cursor-pointer font-alt text-white">Питание в школе</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white">Воспитательная работа</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white">Внеурочная деятельность</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white">Инклюзивное образование</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white">Школьное самоуправление</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white">Родителям</a>
+  </ul>
+</div>
+
+<script>
+  // Показ / скрытие меню
+  const dropdownBtn1 = document.getElementById("dropdown-btn");
+  const dropdown3 = document.getElementById("dropdown-ul");
+  
+  dropdownBtn1.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdown3.classList.toggle('hidden');
+    dropdownBtn1.classList.toggle('open');
+  });
+
+  // Закрытие при клике вне меню
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown-pattern')) {
+      dropdown3.classList.add('hidden');
+      dropdownBtn1.classList.remove('open');
+    }
+  });
+</script>
+
+
+           
+
+
+
+          <a class="flex items-center justify-center px-6 p-2 hover:cursor-pointer transition-all duration-[1s] text-center">Контакты</a>
+        </div>
+        <div class="flex justify-end items-center gap-[20px]  text-neutral-50 font-mont font-semibold lg:text-xl xl:text-xl">
+          <a class=" flex items-center justify-center px-6 p-2 hover:cursor-pointer transition-all duration-[1s] px-5 py-2 border-[3px] border-blue-600 rounded-lg tour ml-[10px] w-[110%]">3D тур</a>
+
+
+          <div class="relative inline-block text-left language-selector">
+           <!-- Кнопка текущего языка -->
+           <button id="current-lang" 
+             class="flex items-center gap-[10px] justify-between w-28 px-4 py-2 font-alt text-neutral-50 font-semibold transition-all duration-[0.5s] hover:bg-white hover:text-blue-600 active:bg-white active:text-blue-600 lg:text-xl xl:text-xl">
+             RU <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+           </button>
+         
+           <!-- Dropdown -->
+           <ul id="lang-dropdown" 
+             class="absolute right-0 w-[100%] bg-[#2563EB] shadow-xl hidden z-50 transition-all [1s] mt-[-1px]">
+             <li data-file="index.html" 
+               class="px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-600 font-alt text-neutal-50 lg:text-xl xl:text-xl">RU</li>
+             <li data-file="kz/index.html" 
+               class="px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-600 font-alt text-neutal-50 lg:text-xl xl:text-xl">KZ</li>
+             <li data-file="en/index.html" 
+               class="px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-600 font-alt text-neutal-50 lg:text-xl xl:text-xl">EN</li>
+           </ul>
+          </div>
+
+
+
+       <script src="src/js/dekstop-language.js"></script>
+        </div>
+      </div>
+    </header>
+    <script src="src/js/burger.js"></script>
+
+
+    
+    <section>
+        <img src="assets/images/image3.jpg" alt="" class="w-full relative">
+        <div class="p-[100px] flex flex-col items-center justify-center bg-neutral-50/90 absolute absolute top-[45%] left-1/2 -translate-x-1/2 ">
+            <h1 class="font-family:montserrat-bold text-blue-600 font-mont font-bold    leading-[40px] text-shadow-lg  text-5xl sm:text-6xl sm:leading-[50px] md:text-7xl md:leading-[60px] lg:text-8xl  lg:leading-[80px] xl:text-9xl xl:leading-[80px]">EXAMPLE</b></h1>
+        </div>
+        
+    </section>
+
+
+    
+</body>
+</html>
