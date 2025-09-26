@@ -227,9 +227,6 @@
   .top-\[45\%\] {
     top: 45%;
   }
-  .top-\[200px\] {
-    top: 200px;
-  }
   .top-\[2000px\] {
     top: 2000px;
   }
@@ -238,6 +235,12 @@
   }
   .right-\[-80px\] {
     right: -80px;
+  }
+  .right-\[20px\] {
+    right: 20px;
+  }
+  .right-\[30px\] {
+    right: 30px;
   }
   .bottom-\[-15px\] {
     bottom: -15px;
@@ -256,6 +259,21 @@
   }
   .bottom-\[5px\] {
     bottom: 5px;
+  }
+  .bottom-\[10px\] {
+    bottom: 10px;
+  }
+  .bottom-\[20px\] {
+    bottom: 20px;
+  }
+  .bottom-\[30px\] {
+    bottom: 30px;
+  }
+  .bottom-\[40px\] {
+    bottom: 40px;
+  }
+  .bottom-\[60px\] {
+    bottom: 60px;
   }
   .bottom-\[120px\] {
     bottom: 120px;
@@ -353,6 +371,22 @@
   .size-5\.5 {
     width: calc(var(--spacing) * 5.5);
     height: calc(var(--spacing) * 5.5);
+  }
+  .size-\[50px\] {
+    width: 50px;
+    height: 50px;
+  }
+  .size-\[60px\] {
+    width: 60px;
+    height: 60px;
+  }
+  .size-\[70px\] {
+    width: 70px;
+    height: 70px;
+  }
+  .size-\[100px\] {
+    width: 100px;
+    height: 100px;
   }
   .size-\[888px\] {
     width: 888px;
@@ -592,9 +626,6 @@
   .p-\[100px\] {
     padding: 100px;
   }
-  .p-\[200px\] {
-    padding: 200px;
-  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -636,12 +667,6 @@
   }
   .py-\[50px\] {
     padding-block: 50px;
-  }
-  .pt-\[0\] {
-    padding-top: 0;
-  }
-  .pt-\[0px\] {
-    padding-top: 0px;
   }
   .text-center {
     text-align: center;
@@ -1062,11 +1087,6 @@
       line-height: 60px;
     }
   }
-  .md\:absolute {
-    @media (width >= 48rem) {
-      position: absolute;
-    }
-  }
   .md\:relative {
     @media (width >= 48rem) {
       position: relative;
@@ -1082,11 +1102,6 @@
       top: -74px;
     }
   }
-  .md\:top-\[200px\] {
-    @media (width >= 48rem) {
-      top: 200px;
-    }
-  }
   .md\:right-\[-50px\] {
     @media (width >= 48rem) {
       right: -50px;
@@ -1095,11 +1110,6 @@
   .md\:bottom-\[-25px\] {
     @media (width >= 48rem) {
       bottom: -25px;
-    }
-  }
-  .md\:bottom-\[-200px\] {
-    @media (width >= 48rem) {
-      bottom: -200px;
     }
   }
   .md\:bottom-\[-250px\] {
@@ -1112,21 +1122,6 @@
       bottom: -450px;
     }
   }
-  .md\:bottom-\[-500px\] {
-    @media (width >= 48rem) {
-      bottom: -500px;
-    }
-  }
-  .md\:bottom-\[-1000px\] {
-    @media (width >= 48rem) {
-      bottom: -1000px;
-    }
-  }
-  .md\:bottom-\[10px\] {
-    @media (width >= 48rem) {
-      bottom: 10px;
-    }
-  }
   .md\:bottom-\[25px\] {
     @media (width >= 48rem) {
       bottom: 25px;
@@ -1137,11 +1132,6 @@
       bottom: 27px;
     }
   }
-  .md\:bottom-\[50px\] {
-    @media (width >= 48rem) {
-      bottom: 50px;
-    }
-  }
   .md\:bottom-\[80px\] {
     @media (width >= 48rem) {
       bottom: 80px;
@@ -1150,11 +1140,6 @@
   .md\:bottom-\[100px\] {
     @media (width >= 48rem) {
       bottom: 100px;
-    }
-  }
-  .md\:bottom-\[200px\] {
-    @media (width >= 48rem) {
-      bottom: 200px;
     }
   }
   .md\:bottom-\[240px\] {
@@ -1252,6 +1237,11 @@
       grid-row-end: 4;
     }
   }
+  .md\:mt-0 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
   .md\:mt-\[10px\] {
     @media (width >= 48rem) {
       margin-top: 10px;
@@ -1277,6 +1267,11 @@
       margin-top: 60px;
     }
   }
+  .md\:mt-\[70px\] {
+    @media (width >= 48rem) {
+      margin-top: 70px;
+    }
+  }
   .md\:mt-\[80px\] {
     @media (width >= 48rem) {
       margin-top: 80px;
@@ -1295,16 +1290,6 @@
   .md\:mt-\[300px\] {
     @media (width >= 48rem) {
       margin-top: 300px;
-    }
-  }
-  .md\:mt-\[500px\] {
-    @media (width >= 48rem) {
-      margin-top: 500px;
-    }
-  }
-  .md\:mt-\[600px\] {
-    @media (width >= 48rem) {
-      margin-top: 600px;
     }
   }
   .md\:mb-\[20px\] {
@@ -1686,11 +1671,6 @@
       bottom: -350px;
     }
   }
-  .lg\:bottom-\[10px\] {
-    @media (width >= 64rem) {
-      bottom: 10px;
-    }
-  }
   .lg\:bottom-\[25px\] {
     @media (width >= 64rem) {
       bottom: 25px;
@@ -1699,11 +1679,6 @@
   .lg\:bottom-\[27px\] {
     @media (width >= 64rem) {
       bottom: 27px;
-    }
-  }
-  .lg\:bottom-\[100px\] {
-    @media (width >= 64rem) {
-      bottom: 100px;
     }
   }
   .lg\:bottom-\[150px\] {
@@ -1807,6 +1782,11 @@
   .lg\:w-\[60\%\] {
     @media (width >= 64rem) {
       width: 60%;
+    }
+  }
+  .lg\:w-\[70\%\] {
+    @media (width >= 64rem) {
+      width: 70%;
     }
   }
   .lg\:w-\[80\%\] {
@@ -2006,39 +1986,14 @@
       bottom: 22px;
     }
   }
-  .xl\:bottom-\[50px\] {
+  .xl\:bottom-\[80px\] {
     @media (width >= 80rem) {
-      bottom: 50px;
-    }
-  }
-  .xl\:bottom-\[200px\] {
-    @media (width >= 80rem) {
-      bottom: 200px;
-    }
-  }
-  .xl\:bottom-\[250px\] {
-    @media (width >= 80rem) {
-      bottom: 250px;
-    }
-  }
-  .xl\:bottom-\[300px\] {
-    @media (width >= 80rem) {
-      bottom: 300px;
-    }
-  }
-  .xl\:bottom-\[350px\] {
-    @media (width >= 80rem) {
-      bottom: 350px;
+      bottom: 80px;
     }
   }
   .xl\:bottom-\[400px\] {
     @media (width >= 80rem) {
       bottom: 400px;
-    }
-  }
-  .xl\:bottom-\[3000px\] {
-    @media (width >= 80rem) {
-      bottom: 3000px;
     }
   }
   .xl\:left-\[-15px\] {
@@ -2066,6 +2021,11 @@
       margin-top: 40px;
     }
   }
+  .xl\:mt-\[50px\] {
+    @media (width >= 80rem) {
+      margin-top: 50px;
+    }
+  }
   .xl\:mt-\[60px\] {
     @media (width >= 80rem) {
       margin-top: 60px;
@@ -2074,6 +2034,11 @@
   .xl\:mt-\[70px\] {
     @media (width >= 80rem) {
       margin-top: 70px;
+    }
+  }
+  .xl\:mt-\[90px\] {
+    @media (width >= 80rem) {
+      margin-top: 90px;
     }
   }
   .xl\:mt-\[100px\] {
@@ -2115,6 +2080,12 @@
     @media (width >= 80rem) {
       width: 125px;
       height: 125px;
+    }
+  }
+  .xl\:size-\[170px\] {
+    @media (width >= 80rem) {
+      width: 170px;
+      height: 170px;
     }
   }
   .xl\:size-\[1178px\] {
@@ -2221,6 +2192,11 @@
   .xl\:p-\[80px\] {
     @media (width >= 80rem) {
       padding: 80px;
+    }
+  }
+  .xl\:p-\[100px\] {
+    @media (width >= 80rem) {
+      padding: 100px;
     }
   }
   .xl\:p-\[140px\] {
