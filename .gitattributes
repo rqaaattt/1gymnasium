@@ -1,0 +1,2 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/videos/IMG_6097.MOV filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-mont: "Montserrat", sans-serif; 
+  --font-mont-alt: "Montserrat Alternates", sans-serif
+}
+
+.scrolled{
+    background-color: #2563eb;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: white;
+}
+header a:hover{
+  background-color: #2563eb;
+  color: white;
+}
+
+.scrolled .tour{
+  border-color: white;
+}
+
+.scrolled a:hover{
+  background-color: white;
+  color: #2563eb;
+}
+
+header .language-selector {
+  position: relative;
+  font-weight: 600;
+}
+
+
+
+
+header .language-selector #current-lang .arrow, header .dropdown-pattern #dropdown-btn .arrow{
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+header .language-selector #current-lang.open .arrow, header .dropdown-pattern #dropdown-btn.open .arrow {
+  transform: rotate(-90deg);
+}
+
+header .language-selector .current-lang .arrow,  header .dropdown-pattern .dropdown-ul .arrow {
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+header .language-selector .current-lang.open .arrow, header .dropdown-pattern .dropdown-ul.open .arrow{
+  transform: rotate(-90deg);
+}
+
+/* Скрытое состояние dropdown */
+header .language-selector .dropdown, header .dropdown-pattern .dropdown-ul {
+  margin-top: -0.0625rem;
+  position: absolute;
+  left: 0;
+  width: auto;
+  background-color: #2563eb;
+  list-style: none;
+  z-index: 100;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  border-radius: 0 0 1rem 1rem;
+  overflow: hidden;
+}
+
+/* Показанное состояние dropdown */
+header .language-selector .dropdown.show, header .dropdown-pattern .dropdown-ul.show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+header .language-selector .dropdown li, header .dropdown-pattern .dropdown-ul li {
+  padding: 0.625rem 1.25rem;
+  width: 4.375rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+
+header .open {
+  background-color: #fff;
+  color: #2563eb;
+}
+
+#dropdown-btn:hover, #current-lang:hover{
+  background-color: #2563eb;
+  color: white;
+}
+
+
+#dropdown-ul a:hover{
+  color: #2563eb;
+  background-color: #fff;
+}
+
+.scrolled #dropdown-btn:hover, .scrolled #current-lang:hover{
+  background-color: #fff;
+  color: #2563eb;
+}
+
+.language-selector{
+  width: 100%;
+}
+
+.flag:hover{
+  background-color: transparent;
+}
+
+.scrolled .flag:hover{
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0.9375rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1565D8;
+  border-radius: 0.625rem 0 0 0.625rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #114999;
+  border-radius: 0.625rem 0 0 0.625rem;
+}/*# sourceMappingURL=scrollbar.css.map */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Цвет фона прелоадера */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#preloader .spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top-color: #1565D8; /* Цвет верхней грани спиннера */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
