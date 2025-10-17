@@ -359,5 +359,32 @@
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script>console.log("Lenis работает?", typeof Lenis);</script>
   <script src="src/js/scroll.js" defer></script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+    // создаём skeleton поверх картинки
+    const skeleton = document.createElement('div');
+    skeleton.className = 'absolute inset-0 bg-gray-200 animate-pulse rounded-2xl pointer-events-none transition-opacity duration-500';
+    
+    // делаем img позиционированным родителем, если надо
+    const parent = img.parentElement;
+    if (getComputedStyle(parent).position === 'static') {
+      parent.classList.add('relative');
+    }
+
+    // вставляем skeleton поверх
+    parent.appendChild(skeleton);
+
+    // когда изображение загрузилось — скрываем skeleton
+    img.addEventListener('load', () => {
+      skeleton.classList.add('opacity-0');
+      setTimeout(() => skeleton.remove(), 500);
+    });
+  });
+});
+</script>
+
+
 </body>
 </html>
