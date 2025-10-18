@@ -212,9 +212,6 @@
   .pointer-events-none {
     pointer-events: none;
   }
-  .visible {
-    visibility: visible;
-  }
   .absolute {
     position: absolute;
   }
@@ -382,6 +379,12 @@
     width: 888px;
     height: 888px;
   }
+  .h-\[20\%\] {
+    height: 20%;
+  }
+  .h-\[50\%\] {
+    height: 50%;
+  }
   .h-\[65px\] {
     height: 65px;
   }
@@ -390,6 +393,9 @@
   }
   .h-\[150px\] {
     height: 150px;
+  }
+  .h-\[200px\] {
+    height: 200px;
   }
   .h-\[220px\] {
     height: 220px;
@@ -773,9 +779,6 @@
   }
   .text-zinc-700 {
     color: var(--color-zinc-700);
-  }
-  .uppercase {
-    text-transform: uppercase;
   }
   .underline {
     text-decoration-line: underline;
@@ -2367,6 +2370,11 @@
       padding: 80px;
     }
   }
+  .xl\:p-\[100px\] {
+    @media (width >= 80rem) {
+      padding: 100px;
+    }
+  }
   .xl\:p-\[140px\] {
     @media (width >= 80rem) {
       padding: 140px;
@@ -2385,6 +2393,11 @@
   .xl\:p-\[200px\] {
     @media (width >= 80rem) {
       padding: 200px;
+    }
+  }
+  .xl\:px-\[100px\] {
+    @media (width >= 80rem) {
+      padding-inline: 100px;
     }
   }
   .xl\:px-\[190px\] {
