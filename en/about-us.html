@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О школе&Поступление | 1gymnasium</title>
-    <link rel="stylesheet" href="src/dist/styles.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> -->
-      <link rel="icon" type="image/png" href="logo.svg" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios" />
+    <title>About school & Admission| 1gymnasium</title>
+    <link rel="stylesheet" href="../src/dist/styles.css">
+    <link rel="icon" type="image/png" href="../logo.svg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios" />
 </head>
 <body>
 <div id="preloader" class="flex flex-col items-center justify-center">
@@ -26,20 +25,20 @@
       <div class="spinner"></div>
     </div>
   </div>
-  <script src="src/js/preloader.js"></script>
+  <script src="../src/js/preloader.js"></script>
 
 
 <header id="section1" class=" fixed top-0 left-0 w-full z-50 transition-all duration-[1s]  lg:hidden ">
       <div class="flex items-center justify-between px-[20px] py-[10px] md:px-[30px] md:py-[20px] duration-[1s] ">
-        <!--МЕНЯТЬ-->  <a href="index.html" class="flag"><img src="assets/icons/logo.svg" alt="" class="sm:size-[80px]"></a>
+        <a href="index.html" class="flag"><img src="../assets/icons/logo.svg" alt="" class="sm:size-[80px]"></a> <!--!!!!!!-->
         <button id="burger" class="flex flex-col gap-1">
-          <img src="assets/icons/menu.svg" alt="">
+          <img src="../assets/icons/menu.svg" alt="">
         </button>
       </div>
 
       <nav id="menu" class="overflow-hidden max-h-0   hidden flex flex-col
                            transition-all duration-[1s]">
-        <!--МЕНЯТЬ-->  <a href="about-us.html" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">О школе & Поступление</a>
+        <a href="about-us.html" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">About school & Admission</a>
         
 
 
@@ -48,8 +47,8 @@
         <div class="relative w-full">
           <!-- Кнопка -->
           <button id="dropdownBtn" 
-            class="flex w-full items-center font-mont font-semibold justify-between p-[20px] text-left text-base sm:text-lg md:text-xl font-medium text-blue-600 text-white bg-white bg-transparent ">
-            Важные темы
+            class="font-mont flex w-full items-center font-mont font-semibold justify-between p-[20px] text-left text-base sm:text-lg md:text-xl font-medium text-blue-600 text-white bg-white bg-transparent ">
+            Important Topics
             <svg class="size-5.5 ml-2 transition-transform duration-200 rotate-90" 
                  id="dropdownArrow" 
                  xmlns="http://www.w3.org/2000/svg" 
@@ -63,62 +62,62 @@
           <!-- Выпадающий список -->
           <div id="dropdownMenu" 
                class="hidden flex flex-col bg-blue-700 text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold">
-            <!--МЕНЯТЬ--> <a  href="nutrition.html"                  class="px-[50px] py-[20px] block transition-linear"          >Питание в школе</a>
-            <!--МЕНЯТЬ--> <a  href="educational_working.html"        class="px-[50px] py-[20px] block transition-linear"     >Воспитательная работа</a>
-            <!--МЕНЯТЬ--> <a  href="extracurricular_activities.html" class="px-[50px] py-[20px] block transition-linear"      >Внеурочная деятельность</a>
-            <!--МЕНЯТЬ--> <a  href="inclusive_edu.html"              class="px-[50px] py-[20px] block transition-linear"      >Инклюзивное образование</a>
-            <!--МЕНЯТЬ--> <a  href="self-government.html"            class="px-[50px] py-[20px] block transition-linear"     >Школьное самоуправление</a>
-            <!--МЕНЯТЬ--> <a  href="for_parents.html"                class="px-[50px] py-[20px] block transition-linear"    >Родителям</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="nutrition.html">School Meals</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="educational_working.html">Educational Work</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="extracurricular_activities.html">Extracurricular Activities</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="inclusive_edu.html">Inclusive Education</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="self-government.html">Student Self-Government</a>
+            <a class="px-[50px] py-[20px] block transition-linear" href="for_parents.html">For Parents</a>
           </div>
         </div>
 
-        <script src="src/js/dropdownMenu.js"></script>
+        <script src="../src/js/dropdownMenu.js"></script>
 
 
 
 
 
-        <!--МЕНЯТЬ-->  <a href="contacts.html" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">Контакты</a>
-        <a class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear" href="https://kuula.co/share/collection/7DwGq?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1&margin=1&inst=ru">3D тур</a>
+        <a href="contacts.html" class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear">Contacts</a>
+        <a class="p-[20px] block text-neutral-50 text-base sm:text-lg md:text-xl font-mont font-semibold transition-linear" href="https://kuula.co/share/collection/7DwGq?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1&margin=1&inst=ru">3D tour</a>
         <div class="relative language-selector w-[100vw]">
           <!-- Кнопка -->
           <button class="p-[20px] current-lang flex items-center justify-between gap-1 text-white font-mont font-semibold text-base sm:text-lg md:text-xl w-[100%]" >
-            Русский язык
+            English
              <span class="material-symbols-outlined arrow">arrow_back_ios</span>
           </button>
         
-          <!--МЕНЯТЬ--> <!-- Выпадающее меню -->
+          <!-- Выпадающее меню -->
           <ul class="lang-dropdown  hidden  z-0 mt-[-1px] z-0 bg-blue-700 ">
-            <li data-file="kz/about-us.html" class="text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base  px-[50px] py-[20px]  transition-all duration-[1s]">Казахский язык</li>
-            <li data-file="en/about-us.html" class="text-base sm:text-lg md:text-xl font-mont font-semibold
-              text-base  px-[50px] py-[20px]  transition-all duration-[1s] ">Английский язык</li>
+            <li data-file="../about-us.html" class="   text-base sm:text-lg md:text-xl font-mont font-semibold
+              text-base px-[50px] py-[20px]  transition-all duration-[1s]">Russian</li>
+            <li data-file="../kz/about-us.html" class="text-base sm:text-lg md:text-xl font-mont font-semibold
+              text-base  px-[50px] py-[20px]  transition-all duration-[1s]">Kazakh</li>
           </ul>
         </div>
-        <script src="src/js/burger-language.js"></script>
+        <script src="../src/js/burger-language.js"></script>
       </nav>
     </header>
     <header id="section2" class="hidden lg:block fixed top-0 left-0 w-full z-50 transition-all duration-[1s]">
       <div class="flex items-center justify-between px-[30px] py-[20px] lg:px-[50px] py-[10px] gap-[20px]">
-        <a href="index.html" class="hover:cursor-pointer flag"><img src="assets/icons/logo.svg" alt="" class="md:size-[100px] lg:size-[125px]"></a>
+        <a href="index.html" class="hover:cursor-pointer flag"><img src="../assets/icons/logo.svg" alt="" class="md:size-[100px] lg:size-[125px]"></a>
         <div class="flex flex-1 justify-end items-stretch items-center  text-neutral-50 font-mont font-semibold lg:text-xl xl:text-xl ">
-          <!--МЕНЯТЬ-->  <a class="flex items-center justify-center px-6 p-2 hover:cursor-pointer transition-all duration-[1s] text-center" href="about-us.html">О школе&</br>Поступление</a>
+          <a class="flex items-center justify-center px-6 p-2 hover:cursor-pointer transition-all duration-[1s] text-center " href="about-us.html">About School&</br>Admission</a>
             
           <div class="relative inline-block text-left dropdown-pattern">
   <!-- Кнопка текущего языка -->
   <button id="dropdown-btn"
     class="flex items-center gap-[10px] justify-between w-[100%] px-4 py-2 font-alt text-neutral-50 font-semibold transition-all duration-[0.5s] hover:bg-white hover:text-blue-600 active:bg-white active:text-blue-600">
-    Важные<br>темы <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+    Important<br>topics <span class="material-symbols-outlined arrow">arrow_back_ios</span>
   </button>
 
   <!-- Dropdown -->
   <ul id="dropdown-ul" class="hidden absolute left-0 mt-2 w-[250%] bg-blue-600 shadow-lg z-50 flex flex-col ">
-    <!--МЕНЯТЬ-->  <a class="px-4 py-2 cursor-pointer font-alt text-white" href="nutrition.html">Питание в школе</a>
-    <!--МЕНЯТЬ-->  <a class="px-4 py-2 cursor-pointer font-alt text-white" href="educational_working.html">Воспитательная работа</a>
-    <!--МЕНЯТЬ-->  <a class="px-4 py-2 cursor-pointer font-alt text-white" href="extracurricular_activities.html">Внеурочная деятельность</a>
-    <!--МЕНЯТЬ-->  <a class="px-4 py-2 cursor-pointer font-alt text-white" href="inclusive_edu.html">Инклюзивное образование</a>
-    <!--МЕНЯТЬ-->  <a class="px-4 py-2 cursor-pointer font-alt text-white" href="self-government.html">Школьное самоуправление</a>
-    <!--МЕНЯТЬ-->  <a class="px-4 py-2 cursor-pointer font-alt text-white" href="for_parents.html">Родителям</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white" href="nutrition.html">School Meals</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white" href="educational_working.html">Educational Work</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white" href="extracurricular_activities.html">Extracurricular Activities</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white" href="inclusive_edu.html">Inclusive Education</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white" href="self-government.html">Student Self-Government</a>
+    <a class="px-4 py-2 cursor-pointer font-alt text-white" href="for_parents.html">For Parents</a>
   </ul>
 </div>
 
@@ -147,86 +146,79 @@
 
 
 
-          <!--МЕНЯТЬ-->  <a class="flex items-center justify-center px-6 p-2 hover:cursor-pointer transition-all duration-[1s] text-center" href="contacts.html">Контакты</a>
+          <a class="flex items-center justify-center px-6 p-2 hover:cursor-pointer transition-all duration-[1s] text-center" href="contacts.html">Contacts</a>
         </div>
         <div class="flex justify-end items-center gap-[20px]  text-neutral-50 font-mont font-semibold lg:text-xl xl:text-xl">
-          <a class=" flex items-center justify-center px-6 p-2 hover:cursor-pointer transition-all duration-[1s] px-5 py-2 border-[3px] border-blue-600 rounded-lg tour ml-[10px] w-[110%]" href="https://kuula.co/share/collection/7DwGq?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1&margin=1&inst=ru">3D тур</a>
+          <a class=" flex items-center justify-center px-6 p-2 hover:cursor-pointer transition-all duration-[1s] px-5 py-2 border-[3px] border-blue-600 rounded-lg tour ml-[10px] w-[110%]" href="https://kuula.co/share/collection/7DwGq?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1&margin=1&inst=ru">3D tour</a>
 
 
           <div class="relative inline-block text-left language-selector">
            <!-- Кнопка текущего языка -->
            <button id="current-lang" 
              class="flex items-center gap-[10px] justify-between w-28 px-4 py-2 font-alt text-neutral-50 font-semibold transition-all duration-[0.5s] hover:bg-white hover:text-blue-600 active:bg-white active:text-blue-600 lg:text-xl xl:text-xl">
-             RU <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+             EN<span class="material-symbols-outlined arrow">arrow_back_ios</span>
            </button>
          
            <!-- Dropdown -->
            <ul id="lang-dropdown" 
              class="absolute right-0 w-[100%] bg-[#2563EB] shadow-xl hidden z-50 transition-all [1s] mt-[-1px]">
-             <li data-file="kz/about-us.html" 
+             <li data-file="../kz/about-us.html" 
                class="px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-600 font-alt text-neutal-50 lg:text-xl xl:text-xl">KZ</li>
-             <li data-file="en/about-us.html" 
-               class="px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-600 font-alt text-neutal-50 lg:text-xl xl:text-xl">EN</li>
+             <li data-file="../about-us.html" 
+               class="px-4 py-2 cursor-pointer hover:bg-white hover:text-blue-600 font-alt text-neutal-50 lg:text-xl xl:text-xl">RU</li>
            </ul>
           </div>
 
 
 
-       <script src="src/js/dekstop-language.js"></script>
+       <script src="../src/js/dekstop-language.js"></script>
         </div>
       </div>
     </header>
-    <script src="src/js/burger.js"></script>
+    <script src="../src/js/burger.js"></script>
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1128489218?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%" title="video1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-    <!-- <video src="assets/videos/IMG_6097.MOV" class="w-full" autoplay muted></video> -->
+ <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1128489218?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%" title="video1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <!-- <video src="../assets/videos/IMG_6097.MOV" class="w-full" autoplay muted></video> -->
      <main class="flex flex-col items-center">
     <section class="bg-neutral-50 w-full h-auto flex flex-col justify-start items-start gap-[10px] px-[40px] py-[50px]   sm:gap-[20px] sm:px-[70px] sm:py-[80px] md:gap-[30px] md:px-[90px] md:py-[100px] lg:gap-[40px] lg:px-[100px] lg:py-[110px] xl:gap-[40px] xl:px-[220px] xl:py-[110px]">
         <div class="flex gap-[10px] justify-start items-start sm:gap-[20px] md:gap-[30px] lg:gap-[40px] xl:gap-[40px]">
-          <img src="assets/icons/f.svg" alt="" class="w-[52px] sm:w-[93px] sm:h-[93px] md:w-[100px] md:h-[100px] lg:w-[126px] lg:h-[126px] xl:w-[194px]">
+          <img src="../assets/icons/f.svg" alt="" class="w-[52px] sm:w-[93px] sm:h-[93px] md:w-[100px] md:h-[100px] lg:w-[126px] lg:h-[126px] xl:w-[194px]">
           <div>
-            <span class="font-mont font-bold text-neutral-700 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Направляем умы,</span></br>
-            <span class="montserrat-bold text-blue-600 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Создавая будущее</span>
+            <span class="font-mont font-bold text-neutral-700 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Igniting Minds,</span></br>
+            <span class="montserrat-bold text-blue-600 font-mont font-bold   text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Transforming Futures</span>
             <div class="hidden sm:block sm:mt-[10px] md:block md:mt-[20px] lg:block lg:mt-[20px] xl:mt-[40px]">
-              <p class="font-mont-alt font-medium text-zinc-700   text-base w-[280px] sm:text-lg sm:w-[100%] sm:mb-[10px] md:text-xl md:w-[100%] md:mb-[20px] lg:text-2xl lg:w-[100%] lg:mb-[20px] xl:text-2xl xl:w-[100%] xl:mb-[40px]">Наша миссия — обеспечить качественное образование,
-                которое станет прочной основой для успешной жизни
-                и карьеры каждого ученика. Мы стремимся не только
-                обучать, но и вдохновлять, раскрывая индивидуальные
-                таланты и формируя уверенность в будущем.</p>
+              <p class="font-mont-alt font-medium text-zinc-700   text-base w-[280px] sm:text-lg sm:w-[100%] sm:mb-[10px] md:text-xl md:w-[100%] md:mb-[20px] lg:text-2xl lg:w-[100%] lg:mb-[20px] xl:text-2xl xl:w-[100%] xl:mb-[40px]">
+                Our mission is to provide high-quality education that serves as a solid foundation for every student’s successful life and career. We aim not only to teach, but also to inspire, helping each individual uncover their unique talents and build confidence in the future.</p>
             </div>
           </div>
         </div>
         <div class="my-[10px] sm:hidden">
-          <p class="font-mont-alt font-medium text-zinc-700   text-base w-[100%] mb-[10px]">Наша миссия — обеспечить качественное образование,
-            которое станет прочной основой для успешной жизни
-            и карьеры каждого ученика. Мы стремимся не только
-            обучать, но и вдохновлять, раскрывая индивидуальные
-            таланты и формируя уверенность в будущем.</p>
+          <p class="font-mont-alt font-medium text-zinc-700   text-base w-[100%] mb-[10px]">Our mission is to provide high-quality education that serves as a solid foundation for every student’s successful life and career. We aim not only to teach, but also to inspire, helping each individual uncover their unique talents and build confidence in the future.</p>
         </div>
     </section>
 
     <section class="scroll-anim p-[50px] lg:p-[100px] xl:px-[200px] ">
-      <h1 class="text-blue-600 font-bold font-mont text-4xl sm:text-4xl md:text-7xl lg:text-7xl xl:text-8xl">ВАЖНЫЕ ТЕМЫ</h1>
+      <h1 class="text-blue-600 font-bold font-mont text-4xl sm:text-4xl md:text-7xl lg:text-7xl xl:text-8xl">IMPORTANT TOPICS</h1>
       <div class="grid grid-rows-1 grid-cols-1 gap-[20px] md:gap-[40px] xl:gap-[50px] mt-[30px] md:grid-cols-3 ">
         <a class="scroll-anim w-[1fr] cursor-pointer md:h-[400px]" href="admission.html"> <!--МЕНЯТЬ-->
           <div class="bg-[#FAFAFA] flex-col justify-center items-start ">
-            <img src="assets/images/Base5.jpeg" alt="" class="w-[100%] h-[300px] ">
-            <p  class="font-mont font-bold text-sm md:text-base xl:text-xl text-zinc-500 pt-[20px] px-[30px] hover:text-blue-600">Для будущих учеников</p>
-            <h1 class="font-mont font-medium  text-lg md:text-xl xl:text-2xl text-zinc-700 px-[30px] pb-[50px]">Поступление в школу</h1>
+            <img src="../assets/images/Base5.jpeg" alt="" class="w-[100%] h-[300px] ">
+            <p  class="font-mont font-bold text-sm md:text-base xl:text-xl text-zinc-500 pt-[20px] px-[30px] hover:text-blue-600">For Future Students</p>
+            <h1 class="font-mont font-medium  text-lg md:text-xl xl:text-2xl text-zinc-700 px-[30px] pb-[50px]">Admission to the school</h1>
           </div>
         </a>
         <a class="scroll-anim w-[1fr] cursor-pointer md:h-[400px]" href="administration.html"> <!--МЕНЯТЬ-->
           <div class="bg-[#FAFAFA] flex-col justify-center items-start">
-            <img src="assets/images/Base3.jpeg" alt="" class="w-[100%] h-[300px] ">
-            <p  class="font-mont font-bold text-sm md:text-base xl:text-xl text-zinc-500 pt-[20px] px-[30px] hover:text-blue-600">Для учеников и родителей</p>
-            <h1 class="font-mont font-medium  text-lg md:text-xl xl:text-2xl text-zinc-700 px-[30px] pb-[50px]">Администрация нашей школы</h1>
+            <img src="../assets/images/Base3.jpeg" alt="" class="w-[100%] h-[300px] ">
+            <p  class="font-mont font-bold text-sm md:text-base xl:text-xl text-zinc-500 pt-[20px] px-[30px] hover:text-blue-600">For students and parents</p>
+            <h1 class="font-mont font-medium  text-lg md:text-xl xl:text-2xl text-zinc-700 px-[30px] pb-[50px]">Administration in our school</h1>
           </div>
         </a>
         <a class="scroll-anim w-[1fr] cursor-pointer md:h-[400px]" href="career.html"> <!--МЕНЯТЬ-->
           <div class="bg-[#FAFAFA] flex-col justify-center items-start">
-            <img src="assets/images/Base4.jpeg" alt="" class="w-[100%] h-[300px] ">
-            <p  class="font-mont font-bold text-sm md:text-base xl:text-xl text-zinc-500 pt-[20px] px-[30px] hover:text-blue-600">Для будущих учителей</p>
-            <h1 class="font-mont font-medium  text-lg md:text-xl xl:text-2xl text-zinc-700 px-[30px] pb-[50px]">Карьера в стенах школы</h1>
+            <img src="../assets/images/Base4.jpeg" alt="" class="w-[100%] h-[300px] ">
+            <p  class="font-mont font-bold text-sm md:text-base xl:text-xl text-zinc-500 pt-[20px] px-[30px] hover:text-blue-600">For future teachers</p>
+            <h1 class="font-mont font-medium  text-lg md:text-xl xl:text-2xl text-zinc-700 px-[30px] pb-[50px]">Career within the school walls</h1>
           </div>
         </a>
         
@@ -237,13 +229,13 @@
     <section class="flex flex-col items-center scroll-anim">
     <article class="scroll-anim relative z-0 mt-[60px] sm:mt-[80px] md:mt-[100px] lg:mt-[120px] xl:mt-[150px]">
       <div class="absolute z-1   ml-[10px] top-[-36px] sm:top-[-45px] md:top-[-56px] md:z-2 md:left-[-60px] lg:top-[-74px] xl:left-[-50px]">
-        <h1 class="font-family:montserrat-bold text-blue-600 font-mont font-bold    leading-[40px] text-shadow-lg  text-5xl sm:text-6xl sm:leading-[50px] md:text-7xl md:leading-[60px] lg:text-8xl  lg:leading-[80px] xl:text-8xl xl:leading-[80px]">НАША МИССИЯ</br>
+        <h1 class="font-family:montserrat-bold text-blue-600 font-mont font-bold    leading-[40px] text-shadow-lg  text-5xl sm:text-6xl sm:leading-[50px] md:text-7xl md:leading-[60px] lg:text-8xl  lg:leading-[80px] xl:text-8xl xl:leading-[80px]">OUR MISSION</br>
       </div>
       <section class="flex flex-col items-center w-auto">
-        <img src="assets/images/image4.avif" alt="" class="w-[95vw] md:relative md:left-[-50px] md:w-[624px] md:h-[447px] md:z-1 lg:w-[823px] lg:h-[589px] xl:w-[869px] xl:h-[622px]">
+        <img src="../assets/images/image4.avif" alt="" class="w-[95vw] md:relative md:left-[-50px] md:w-[624px] md:h-[447px] md:z-1 lg:w-[823px] lg:h-[589px] xl:w-[869px] xl:h-[622px]">
         <div class="absolute z-1 bg-blue-600        w-[90%] p-[24px] bottom-[-130px] sm:w-[80%] sm:p-[30px] sm:bottom-[-120px] md:w-[574px] md:p-[50px] md:pt-[300px] md:pr-[100px] md:z-0 md:bottom-[-250px] md:right-[-50px] lg:w-[769px] xl:w-[800px] ">
         <p class="mb-[10px] font-mont-alt font-medium text-neutral-50 text-base w-[100%] sm:text-lg sm:w-[100%] sm:mb-[10px] md:text-xl md:w-[100%] md:mb-[20px] lg:text-2xl lg:w-[100%] lg:mb-[20px] xl:text-2xl xl:w-[100%] xl:mb-[40px]">
-          Мы помогаем каждому ученику раскрыть свои сильные стороны и найти путь к успеху.</p>
+          We help every student discover their strengths and find the path to success.</p>
         </div>
       </section>
     </article>
@@ -252,64 +244,64 @@
 
     <article class="scroll-anim z-1 bg-neutral-50 w-[100%] flex flex-col justify-center  items-center mt-[200px] md:mt-[350px] p-[50px] md:p-[70px]">
       <div class="flex items-end      gap-[10px]">
-          <img src="assets/icons/facilitie.svg" alt="" class=" w-[52px] h-[65px] sm:w-[92px] sm:h-[69px] md:w-[96px] md:h-[78px] lg:w-[110px] lg:h-[95px] xl:w-[170px] xl:h-[140px]">
-          <h1 class="font-family:montserrat-bold text-neutral-700 font-mont font-bold    text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">НИ ШАГУ</br>
-          <bold class="font-bold text-blue-600">НАЗАД.</bold></h1>   
+          <img src="../assets/icons/facilitie.svg" alt="" class=" w-[52px] h-[65px] sm:w-[92px] sm:h-[69px] md:w-[96px] md:h-[78px] lg:w-[110px] lg:h-[95px] xl:w-[170px] xl:h-[140px]">
+          <h1 class="font-family:montserrat-bold text-neutral-700 font-mont font-bold    text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">Driven by</br>
+          <bold class="font-bold text-blue-600">Ambition</bold></h1>   
       </div>
       <p class="text-center font-mont-alt font-medium text-zinc-700 mt-[10px]  text-base w-[100%] sm:text-lg sm:w-[100%] sm:mt-[10px] md:text-xl md:w-[100%] md:mt-[20px] lg:text-2xl lg:w-[100%] lg:mt-[20px] xl:text-2xl xl:w-[100%] xl:mt-[40px]">
-        Мы верим, что стремление к совершенству <br>начинается со смелого видения и <br>целеустремленности.</p>
+        We believe that the pursuit of excellence <br>begins with a bold vision and <br>determination.</p>
     
       <div class="grid grid-rows-1 grid-cols-1 gap-[10px] mt-[30px] md:grid-cols-3 ">
-        <img src="assets/images/image1A.png" alt="" class="w-[1fr] scroll-anim">
-        <img src="assets/images/image1B.png" alt="" class="w-[1fr] scroll-anim">
-        <img src="assets/images/image1C.png" alt="" class="w-[1fr] scroll-anim">
+        <img src="../assets/images/image1A.png" alt="" class="w-[1fr] scroll-anim">
+        <img src="../assets/images/image1B.png" alt="" class="w-[1fr] scroll-anim">
+        <img src="../assets/images/image1C.png" alt="" class="w-[1fr] scroll-anim">
       </div>
 
     </article>
 
     <section class=" px-[10px] mt-[80px] sm:px-[60px] md:px-[20px] xl:px-[310px] flex flex-col justify-center items-center scroll-anim">
-      <h1 class="text-center font-mont font-bold text-blue-600 text-3xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl">САМООЦЕНКА</h1>
-      <span class="font-mont text-neutral-700 flex text-center mt-[10px] w-[80%] sm:w-auto md:px-[60px] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-center">Мы системно подходим к самооценке, потому что верим: развитие начинается с честного взгляда на себя. Анализируя наши сильные стороны и зоны роста, мы создаём условия для постоянного улучшения качества образования. </span>
+      <h1 class="text-center font-mont font-bold text-blue-600 text-3xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl">SELF-ASSESSMENT</h1>
+      <span class="font-mont text-neutral-700 flex text-center mt-[10px] w-[80%] sm:w-auto md:px-[60px] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-center">We take a systematic approach to self-assessment because we believe that growth begins with an honest look at oneself. By analyzing our strengths and areas for development, we create the conditions for continuous improvement in the quality of education.</span>
       <div class="flex justify-center items-center flex-col relative">
-      <img src="assets/images/image5.avif" alt="" class="w-[80%] mt-[10px]  md:w-[633px] lg:w-[864px] lg:mt-[30px] xl:w-[750px] ">
+      <img src="../assets/images/image5.avif" alt="" class="w-[80%] mt-[10px]  md:w-[633px] lg:w-[864px] lg:mt-[30px] xl:w-[750px] ">
       <div class="absolute right-[0px] bottom-[-30px] md:right-[-50px]">
         <a class="cursor-pointer"><div class="bg-[#FAFAFA] p-[5px] md:p-[20px] ">
-      <img src="assets/icons/file.svg" alt="" class="size-[50px]"></a></div>
+      <img src="../assets/icons/file.svg" alt="" class="size-[50px]"></a></div>
       </div>
       
     </section>
 
     <footer class="scroll-anim w-[100%] mt-[20px] relative">
-      <h1 class="relative  font-bold text-zinc-700 text-4xl z-1 p-[20px] sm:text-6xl sm:p-[40px] md:text-7xl md:p-[60px] lg:text-8xl lg:p-[80px] xl:text-9xl xl:p-[80px]">Станьте частью</br>нашей семьи</h1>
+      <h1 class="relative  font-bold text-zinc-700 text-4xl z-1 p-[20px] sm:text-6xl sm:p-[40px] md:text-7xl md:p-[60px] lg:text-8xl lg:p-[80px] xl:text-9xl xl:p-[80px]">Become a</br> part of us</h1>
       <div class="relative z-0 bottom-[50px] sm:bottom-[150px] md:bottom-[100px] lg:bottom-[220px] xl:bottom-[300px]">
-        <img src="assets/images/bg2_B.svg" alt="" class="w-[100vw] h-auto object-fit md:hidden" class="select-none pointer-events-none" draggable="false" oncontextmenu="return false">
-        <img src="assets/images/bg2_A.svg" alt="" class="hidden w-[100vw] object-fit h-auto md:block" class="select-none pointer-events-none" draggable="false" oncontextmenu="return false">
+        <img src="../assets/images/bg2_B.svg" alt="" class="w-[100vw] h-auto object-fit md:hidden" class="select-none pointer-events-none" draggable="false" oncontextmenu="return false">
+        <img src="../assets/images/bg2_A.svg" alt="" class="hidden w-[100vw] object-fit h-auto md:block" class="select-none pointer-events-none" draggable="false" oncontextmenu="return false">
       </div>
 
       <section class="flex flex-col justify-start items-center absolute bottom-[-250px] sm:bottom-[-150px] md:bottom-[-450px] lg:bottom-[-350px] xl:bottom-[-50px]">
-        <img src="assets/images/Wave.svg" alt="" class=" w-[101vw] block" class="select-none pointer-events-none" draggable="false" oncontextmenu="return false">
+        <img src="../assets/images/Wave.svg" alt="" class=" w-[101vw] block" class="select-none pointer-events-none" draggable="false" oncontextmenu="return false">
         <div class="bg-neutral-700 p-[15px] sm:p-[70px] lg:px-[195px]">
           <div class="flex justify-start items-center">
-            <a href="index.html" class="cursor-pointer"><img src="assets/icons/logo.svg" alt="" class="md:size-[168px]"></a>
-            <a href="gymnasiumlife.html" class="cursor-pointer"><img src="assets/icons/gymnasium_life_logo.svg" alt="" class="md:w-[153px] md:h-[72px]"></a>
+            <a href="index.html" class="cursor-pointer"><img src="../assets/icons/logo.svg" alt="" class="md:size-[168px]"></a>
+            <a href="gymnasiumlife.html" class="cursor-pointer"><img src="../assets/icons/gymnasium_life_logo.svg" alt="" class="md:w-[153px] md:h-[72px]"></a>
           </div>
           <div class="w-[100%] flex gap-[10px] justify-around">
-            <a class="text-neutral-50 font-mont-alt font-regular w-[50%] md:w-[30%] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">Казахстан, Алматы, Ауэзовский район, 10-микрорайон, 23г</a>
-            <p class="font-mont-alt font-regular text-neutral-50 text-base w-[50%] md:w-[30%] sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">«Учиться — значит открывать мир каждый день. Вместе мы создаём будущее уже сегодня.»</p>
+            <a class="text-neutral-50 font-mont-alt font-regular w-[50%] md:w-[30%] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">Kazakhstan, Almaty, Auezovsky district, 10th microdistrict, 23g</a>
+            <p class="font-mont-alt font-regular text-neutral-50 text-base w-[50%] md:w-[30%] sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">“To learn means to discover the world every day. Together, we are already creating the future today.”</p>
           </div>
 
           <div class="flex items-center justify-center gap-[25px] mt-[20px] md:mt-[60px] md:gap-[75px]">
-            <a class="hover:cursor-pointer " href="https://www.tiktok.com/@1gymnasium_?_t=ZM-8zQC7Er8UZs&_r=1"><img src="assets/icons/tiktok.svg" alt="" class="size-[40px] md:size-[54px]"></a>
-            <a class="hover:cursor-pointer"  href="https://www.instagram.com/1gymnasium.school/"><img src="assets/icons/instagram.svg" alt="" class="md:size-[54px]"></a>
+            <a class="hover:cursor-pointer " href="https://www.tiktok.com/@1gymnasium_?_t=ZM-8zQC7Er8UZs&_r=1"><img src="../assets/icons/tiktok.svg" alt="" class="size-[40px] md:size-[54px]"></a>
+            <a class="hover:cursor-pointer"  href="https://www.instagram.com/1gymnasium.school/"><img src="../assets/icons/instagram.svg" alt="" class="md:size-[54px]"></a>
             <!-- <a class="hover:cursor-pointer"><img src="assets/icons/youtube.svg" alt="" class="md:w-[63px] md:h-[44px]"></a> -->
-            <a class="hover:cursor-pointer" href="https://wa.me/77473131777" target="_blank"><img src="assets/icons/whatsapp.svg" alt="" class="md:size-[54px]"></a>
+            <a class="hover:cursor-pointer" href="https://wa.me/7747313 1777" target="_blank"><img src="../assets/icons/whatsapp.svg" alt="" class="md:size-[54px]"></a>
           </div>
         </div>
       </section>
     </footer>
-</main>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-  <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
-  <script src="src/js/scroll.js" defer></script>
+    <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
+    <script src="../src/js/scroll.js" defer></script>
+    </main>
 </body>
 </html>
