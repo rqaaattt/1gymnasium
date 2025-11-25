@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Главная страница
+DirectoryIndex index.html
+
+# Убираем .html из ссылок
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ $1.html [L]
