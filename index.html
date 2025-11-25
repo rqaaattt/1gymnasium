@@ -5,8 +5,11 @@
   <meta charset="UTF-8" />
   <title>Главная | 1gymnasium</title>
   <link rel="stylesheet" href="src/dist/styles.css">
-  <link rel="icon" type="image/png" href="logo.svg" />
-  <meta name="description" content="Официальный сайт 1 Gymnasium Kazakhstan. Актуальные новости, информация о школе, контакты и события.">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+
+
+  <meta name="description" content="Уникальный сайт школы-гимназии №1 города Алматы, Казахстан. Актуальные новости, информация о школе, контакты и события.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios" />
 </head>
 <body>
@@ -362,6 +365,13 @@
   <script>console.log("Lenis работает?", typeof Lenis);</script>
   <script src="src/js/scroll.js" defer></script>
 
+<script>
+fetch('./schema.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  });
+</script>
 
 
 

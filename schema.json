@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "School",
+  "name": "1 Gymnasium",
+  "url": "https://1gymnasium.kz",
+  "logo": "https://1gymnasium.kz/src/dist/img/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Адрес школы",
+    "addressLocality": "Алматы",
+    "addressCountry": "KZ"
+  },
+  "description": "Официальный сайт Гимназии №1 города Алматы.",
+  "telephone": "+7 747 313 1777"
+}
